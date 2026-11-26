@@ -19,6 +19,9 @@ provider "sbercloud" {
 ```
 
 ## Usage
+
+A runnable configuration is available in [examples/complete](examples/complete).
+
 ### Redis 6
 ```hcl
 module "dcs" {
