@@ -1,3 +1,5 @@
+**English** | [Русский](README.ru.md)
+
 # Sbercloud DCS Terraform module
 
 ## How to Configure Terraform for Sbercloud
@@ -19,6 +21,9 @@ provider "sbercloud" {
 ```
 
 ## Usage
+
+A runnable configuration is available in [examples/complete](examples/complete).
+
 ### Redis 6
 ```hcl
 module "dcs" {
@@ -72,15 +77,15 @@ module "dcs" {
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_sbercloud"></a> [sbercloud](#requirement\_sbercloud) | >= 1.9.0, < 2.0.0 |
+| <a name="requirement_sbercloud"></a> [sbercloud](#requirement\_sbercloud) | 1.13.3 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | 1.10.1 |
+| ---- | ------- |
+| <a name="provider_sbercloud"></a> [sbercloud](#provider\_sbercloud) | 1.13.3 |
 
 ## Modules
 
@@ -89,13 +94,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
-| [sbercloud_dcs_instance.this](https://registry.terraform.io/providers/sbercloud-terraform/sbercloud/latest/docs/resources/dcs_instance) | resource |
+| ---- | ---- |
+| [sbercloud_dcs_instance.this](https://registry.terraform.io/providers/sbercloud-terraform/sbercloud/1.13.3/docs/resources/dcs_instance) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_access_user"></a> [access\_user](#input\_access\_user) | Specifies the username used for accessing a DCS Memcached instance. | `string` | `null` | no |
 | <a name="input_auto_renew"></a> [auto\_renew](#input\_auto\_renew) | Specifies whether auto renew is enabled. | `bool` | `null` | no |
 | <a name="input_availability_zones"></a> [availability\_zones](#input\_availability\_zones) | The code of the AZ where the cache node resides. | `list(string)` | n/a | yes |
@@ -128,7 +133,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_capacity"></a> [capacity](#output\_capacity) | Specifies the cache capacity. |
 | <a name="output_engine"></a> [engine](#output\_engine) | Specifies a cache engine. |
 | <a name="output_engine_version"></a> [engine\_version](#output\_engine\_version) | Specifies the version of a cache engine. |
