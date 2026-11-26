@@ -48,7 +48,7 @@ resource "sbercloud_dcs_instance" "this" {
 
   lifecycle {
     ignore_changes = [
-      security_group_id # needed due to a bug in 1.10.1 provider version
+      security_group_id # needed due to a provider issue; retain until drift behavior is revalidated
     ]
   }
 }
