@@ -1,3 +1,5 @@
+**English** | [Русский](README.ru.md)
+
 # Sbercloud DCS Terraform module
 
 ## How to Configure Terraform for Sbercloud
